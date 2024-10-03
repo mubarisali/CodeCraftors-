@@ -7,4 +7,4 @@ x=x+y
 y=x-y
 x=x-y
 
-print(f"\nafter swaping x={x} and y={y}")
+print(f"\nafter  swaping x={x} and y={y}")
