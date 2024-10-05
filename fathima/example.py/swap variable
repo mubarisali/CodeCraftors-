@@ -1,0 +1,7 @@
+x = 34
+y = 54
+# swapping the numbers
+x, y= y, x
+print("After swapping:")
+print("x =", x)
+print("y =", y)
