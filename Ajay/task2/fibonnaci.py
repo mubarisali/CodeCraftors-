@@ -10,8 +10,9 @@ elif limit == 1 :
 else:
     print(f1 , f2 , end=" ")  
     for i in range(2, limit):
-        f3 = f1 + f2
-        f1 = f2
-        f2 = f3
-        print(f3, end=" ")  
+        # f3 = f1 + f2
+        # f1 = f2
+        # f2 = f3       
+        f1, f2 = f2, f1 + f2  
+        print(f2, end=" ")  
     
