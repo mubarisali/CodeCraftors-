@@ -1,0 +1,12 @@
+# Given a list where all elements appear twice except for one unique element find unique element with least time and space complexity
+# Example = [8,12,5,6,6,3,32,8,4,12,5,4,32]
+
+def find_unique_xor(arr):
+    unique = 0
+    for num in arr:
+        unique ^= num
+    return unique
+
+# Example usage
+arr = [8, 12, 5, 6, 6, 3, 32, 8, 4, 12, 5, 4, 32]
+print(find_unique_xor(arr))  # Output: 3
