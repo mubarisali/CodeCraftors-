@@ -1,4 +1,4 @@
-# write a prgram to print the following pattern
+# write a prgram to print the following pattern - right half pyramid
 
 """
 *           

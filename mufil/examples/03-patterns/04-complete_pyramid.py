@@ -1,4 +1,4 @@
-# write a program to print the following pattern
+# write a program to print the following pattern - Complete  pyramid
 
 """
          *   
