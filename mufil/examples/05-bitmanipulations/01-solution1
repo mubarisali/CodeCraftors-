@@ -1,0 +1,15 @@
+# Given a list where all elements appear twice except for one unique element find unique element with least time and space complexity
+# Example = [8,12,5,6,6,3,32,8,4,12,5,4,32]
+
+def find_unique_nested(arr):
+    for i in range(len(arr)):
+        count = 0
+        for j in range(len(arr)):
+            if arr[i] == arr[j]:
+                count += 1
+        if count == 1:
+            return arr[i]
+
+# Example usage
+arr = [8, 12, 5, 6, 6, 3, 32, 8, 4, 12, 5, 4, 32]
+print(find_unique_nested(arr))  # Output: 3
