@@ -1,4 +1,5 @@
 name = "ajay joy"
+print(f"Original name before modifying : {name}")  
 
 def change_name(name):
     for char in name:
@@ -6,8 +7,7 @@ def change_name(name):
             name = name.replace(char, char.upper())
     return name
     
-print(f"modified name : {change_name(name)}")
-print(f"Original name : {name}") 
+print(f"Modified name : {change_name(name)}")
 
 # Strings are immutable ,it creates a new string rather than modifying the original string.
 
