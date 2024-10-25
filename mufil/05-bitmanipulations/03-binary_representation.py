@@ -1,3 +1,12 @@
+"""
+Given a 32-bit integer num, return a string representing its binary representation. For negative integers, the two’s complement method should be used.
+
+All the digits in the answer string should be in lowercase characters ('0' or '1'), and there should not be any leading zeros in the answer except for the zero itself.
+
+Note: You are not allowed to use any built-in library method to directly solve this problem.
+"""
+
+
 def toBinary(num):
     if num == 0:
         return "0"
@@ -31,3 +40,5 @@ def toBinary(num):
         
         bin_result = "".join(str(x) for x in result)
         return bin_result
+    
+print(toBinary(-1))
