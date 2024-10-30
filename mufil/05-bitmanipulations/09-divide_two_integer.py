@@ -1,6 +1,6 @@
 #https://leetcode.com/problems/divide-two-integers/
 
-def divide(self, dividend, divisor):
+def divide( dividend, divisor):
     """
     :type dividend: int
     :type divisor: int
