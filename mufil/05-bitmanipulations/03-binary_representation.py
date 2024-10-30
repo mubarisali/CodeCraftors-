@@ -37,6 +37,7 @@ def toBinary(num):
                 carry = 1
             else:
                 carry = 0
+                break
         
         bin_result = "".join(str(x) for x in result)
         return bin_result

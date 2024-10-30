@@ -7,9 +7,6 @@ def toHex(num):
     if num == 0:
         return "0"
     
-    if num > 0 and num <= 15:
-        return hexas[num]
-    
     if num > 0:
         result = ""
         while num > 0:
@@ -37,6 +34,9 @@ def toHex(num):
                 carry = 1
             else:
                 carry = 0
+                break
         
         hex_result = "".join(hexas[d] for d in result)
         return hex_result
+    
+print(toHex(-92))

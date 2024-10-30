@@ -2,7 +2,7 @@
 
 #solution -1 
 
-def sortByBits1(self, arr):
+def sortByBits1(arr):
     def countBits(val):
         count = 0
         while val > 0:
@@ -35,6 +35,8 @@ def sortByBits2(arr):
 
 # solution 3
 
-def sortByBits3(self, arr):
+def sortByBits3(arr):
     arr.sort(key=lambda x: (bin(x).count('1'), x))
     return arr
+
+print(sortByBits1([0,1,2,3,4,5,6,7,8]))
