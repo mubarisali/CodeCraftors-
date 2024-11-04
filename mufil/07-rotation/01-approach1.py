@@ -12,13 +12,12 @@ def rotate(nums, k):
     """
     Do not return anything, modify nums in-place instead.
     """
+    k = k%len(nums)
     for _ in range(k):
-        val = nums[0]
-        for j in range(1,len(nums)):
-            temp = nums[j]
-            nums[j] = val
-            val = temp
-        nums[0] = val
+        temp = nums[0]
+        for i in range(1,len(nums)):
+            temp,nums[i] = nums[i],temp
+        nums[0] = temp
 
         
 rotate(nums, 4)
