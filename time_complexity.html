@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Complexity in Algorithm Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code, pre {
+            background-color: #e9ecef;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+        pre {
+            padding: 10px;
+            overflow-x: auto;
+        }
+        hr {
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Time Complexity in Algorithm Analysis</h1>
+    <hr>
+
+    <h2>1. What is Time Complexity?</h2>
+    <p>Time complexity measures how the runtime of an algorithm increases as the input size grows. It gives us a way to gauge the efficiency of an algorithm by analyzing how the number of operations scales relative to the input size.</p>
+
+    <h2>2. Example: Prime Number Check</h2>
+    <p>Let's compare two algorithms for checking if a number is prime.</p>
+
+    <ul>
+        <li><strong>Method 1:</strong> Check divisibility from 2 to n - 1.</li>
+        <li><strong>Method 2:</strong> Check divisibility from 2 to √n.</li>
+    </ul>
+
+    <h3>Code Examples:</h3>
+
+    <pre><code># Method 1: From 2 to n-1
+def is_prime_v1(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+    </code></pre>
+
+    <pre><code># Method 2: From 2 to √n
+import math
+
+def is_prime_v2(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            return False
+    return True
+    </code></pre>
+
+    <p><strong>Time Complexity Impact:</strong> The first method has O(n) time complexity, while the second has O(√n), making the second method much faster for large inputs.</p>
+
+    <h2>3. Analyzing the Runtime of an Algorithm</h2>
+    <p>To evaluate an algorithm's runtime, we analyze the rate of growth of operations as input size increases.</p>
+
+    <h3>Factors Affecting Execution Time:</h3>
+    <ol>
+        <li>Processor Speed</li>
+        <li>Memory Read/Write Speed</li>
+        <li>Architecture</li>
+    </ol>
+
+    <h2>4. Growth Rate Analysis: Examples</h2>
+
+    <h3>Example 1: Constant Time Algorithm</h3>
+    <pre><code>def add(x, y):
+    return x + y
+    </code></pre>
+    <p><strong>Time Complexity:</strong> O(1)</p>
+
+    <h3>Example 2: Linear Time Algorithm</h3>
+    <pre><code>def sum_elements(lst):
+    total = 0
+    for element in lst:
+        total += element
+    return total
+    </code></pre>
+    <p><strong>Time Complexity:</strong> O(n)</p>
+
+    <h3>Example 3: Quadratic Time Algorithm (2D Array Sum)</h3>
+    <pre><code>def sum_2d(matrix):
+    total = 0
+    for row in matrix:
+        for item in row:
+            total += item
+    return total
+    </code></pre>
+    <p><strong>Time Complexity:</strong> O(n<sup>2</sup>)</p>
+
+    <h2>5. Big-O Notation and Asymptotic Notation</h2>
+    <p>Big-O notation (e.g., O(n), O(√n)) is used to describe the upper limit of an algorithm's runtime.</p>
+
+    <h3>Other Notations:</h3>
+    <ul>
+        <li><strong>Big-Omega (Ω):</strong> best-case scenario.</li>
+        <li><strong>Theta (Θ):</strong> average case or tight bound.</li>
+    </ul>
+
+    <h2>6. General Rules for Time Complexity Analysis</h2>
+    <ol>
+        <li>Consider large input sizes.</li>
+        <li>Focus on the worst-case scenario.</li>
+        <li>Drop lower-order terms and constant multipliers.</li>
+        <li>Add the running times of all parts of the algorithm.</li>
+    </ol>
+
+    <h2>7. Time Complexity for Conditional Statements</h2>
+    <p>In algorithms with conditional branches, we consider the worst-case time complexity of any branch to determine the overall time complexity.</p>
+
+</body>
+</html>
