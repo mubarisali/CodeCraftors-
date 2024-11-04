@@ -9,6 +9,7 @@ def divide(self, dividend, divisor):
     if dividend == -2**31 and divisor == -1:
         return 2**31-1
     if abs(divisor) == 1:
+        
         return dividend * divisor
 
     is_negative = (dividend < 0) ^ (divisor < 0)
