@@ -113,3 +113,5 @@ celerybeat.pid
 .pyright/
 
 example.py
+
+notes
