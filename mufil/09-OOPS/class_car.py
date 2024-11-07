@@ -27,9 +27,9 @@ class Car:
         self.mileage += miles
     @staticmethod
     def hello():
-        print("hello")
+        print("You can Call me from ")
 
-        
+
 my_new_car = Car('red', 'audi', 'a4', 2016)
 
 
