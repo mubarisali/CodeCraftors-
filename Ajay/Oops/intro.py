@@ -7,7 +7,7 @@ print(type(random_str))
 #Every time we decalre a variable in Python we are creating an instance of 
 #that particular class like <class 'str'> , <class 'int'>
 random_str.upper()
-#We can access the built-in functions (they are called Methos) 
+#We can access the built-in functions (they are called Methods of the class)
 #of {class str} with the instance random_str we created just now.
 
 
