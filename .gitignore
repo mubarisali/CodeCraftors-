@@ -111,3 +111,7 @@ celerybeat.pid
 
 # Pyright static type checker
 .pyright/
+
+example.py
+
+notes

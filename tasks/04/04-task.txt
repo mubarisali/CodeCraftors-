@@ -1,0 +1,11 @@
+
+1. What is a class in Python, and how is it defined in code?
+2. Explain the difference between instance attributes and class attributes in Python. Provide examples.
+3. What role does the `__init__` method serve in a Python class? How is it used to initialize attributes?
+4. Describe the purpose of the `self` parameter in class methods and explain its importance.
+5. What is the difference between static methods and class methods in Python? How are they defined?
+6. How does inheritance work in Python, and why is it useful in object-oriented programming?
+7. Define encapsulation in Python. How is encapsulation implemented in Python classes, and what benefits does it provide?
+8. Explain the concept of polymorphism in Python. How does Python support polymorphism through method overriding?
+9. What are special methods (also known as "magic methods") in Python, and why are they used? Give examples of common special methods.
+10. Why is it beneficial to use object-oriented programming (OOP) in Python? Discuss how classes, methods, and inheritance contribute to code modularity and reusability.
